@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 /*
 	Ethereal by HTML5 UP
@@ -215,8 +217,8 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			/*background-color: #e1e6e1;*/
+			/*background-image: url("../../images/overlay.png"), url("../../images/overlay.png");*/
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -331,11 +333,30 @@ input, select, textarea {
 			width: 100%;
 		}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h4, h5, h6 {
 		color: rgba(255, 255, 255, 0.875);
-		font-family: "Alegreya Sans SC", Arial, Helvetica, sans-serif;
+		font-family: "Montserrat", Arial, Helvetica, sans-serif;
 		font-weight: 700;
 		line-height: 1.3;
+		margin: 0 0 0.75rem 0;
+		letter-spacing: -0.05em;
+	}
+
+	h2{
+		color: rgba(255, 255, 255, 0.875);
+		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-weight: 5;
+		line-height: 1.3;
+		margin: 0 0 0.75rem 0;
+		letter-spacing: .5rem;
+	}
+
+	h3{
+		color: rgba(255, 255, 255, 0.875);
+		font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+		font-weight: 5;
+		line-height: 1.3;
+		font-style: italic;
 		margin: 0 0 0.75rem 0;
 		letter-spacing: -0.05em;
 	}
@@ -385,7 +406,7 @@ input, select, textarea {
 			}
 
 	h3 {
-		font-size: 1.325rem;
+		font-size: 2.325rem;
 	}
 
 		h3.major {
@@ -2195,14 +2216,14 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-image: url("../../images/Brown 6.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
 				background-size: 128px 128px, auto;
 			}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				/*background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));*/
 				background-size: 128px 128px, auto;
-				background-color: #726193;
+				background-color: #1E6FD9;
 			}
 
 			.panel > *.color2 {
@@ -2221,6 +2242,12 @@ input, select, textarea {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
 				background-color: #353865;
+			}
+
+			.panel > *.color4 {
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-size: 128px 128px, auto;
+				background-color: #FF0000;
 			}
 
 			.panel > *.color1-alt {
@@ -2551,6 +2578,10 @@ input, select, textarea {
 			width: 65rem;
 		}
 
+		.panel.larger {
+			width: 100rem;
+		}
+
 		.panel.small .span-0-25, .panel.medium .span-0-25, .panel.large .span-0-25 {
 			width: 2.5%;
 		}
@@ -2712,14 +2743,15 @@ input, select, textarea {
 		}
 
 		.panel.color0 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+			background-image: url("../../images/Brown 6.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+			background-color: #FF0000;
 			background-size: 128px 128px, auto;
 		}
 
 		.panel.color1 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			/*background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));*/
 			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-color: #1E6FD9;
 		}
 
 		.panel.color2 {
@@ -2738,6 +2770,12 @@ input, select, textarea {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
 			background-color: #353865;
+		}
+
+		.panel.color5 {
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-size: 128px 128px, auto;
+			background-color: #FF0000;
 		}
 
 		.panel.color1-alt {
@@ -2775,9 +2813,9 @@ input, select, textarea {
 		}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				/*background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));*/
 				background-size: 128px 128px, auto;
-				background-color: #726193;
+				background-color: #1E6FD9;
 			}
 
 			.panel > *.color2 {
@@ -3202,9 +3240,9 @@ input, select, textarea {
 				}
 
 			.panel.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				/*background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));*/
 				background-size: 128px 128px, auto;
-				background-color: #726193;
+				background-color: #1E6FD9;
 			}
 
 			.panel.color2 {
